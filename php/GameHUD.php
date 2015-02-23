@@ -14,4 +14,4 @@ include( $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR .
                        'Application.php'
 );
 
-class GameHUD extends Web\Application {}
+class GameHUD extends Runtime\Web\Application {}
