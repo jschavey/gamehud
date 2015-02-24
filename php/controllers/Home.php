@@ -7,7 +7,7 @@
 namespace JSchavey\GameHUD\Controllers;
 
 class Home {
-  public function index( $params ) {
+  public function getIndex( $params ) {
     return 'hello world';
   }
 }
