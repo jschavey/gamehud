@@ -22,10 +22,11 @@ class GameHUD extends Runtime\Web\Application {
     //  Ensure parent code is executed
     parent::__construct();
 
-    //  Register GameHUD namespace and prioritize its use
-    $this->registerClassPrefix( 'JSchavey\GameHUD',
-                 $_SERVER['DOCUMENT_ROOT'] . 'php',
-                                              true
-    );
+    //  Define GameHUD library
+    $lib = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR .
+                               'php' . DIRECTORY_SEPARATOR;
+
+    //  Register GameHUD namespace's directory and prioritize its use
+    $this->registerClassPrefix( 'JSchavey\GameHUD', $lib, true );
   }
 }
